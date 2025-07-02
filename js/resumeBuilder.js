@@ -1,22 +1,19 @@
 // bio object and its function
 var bio = {
 	"name": "Poonam Gupta",
-	"role": "Web Developer",
+	"role": "Senior Software Engineer",
 	"contacts": {
-		"mobile": 123456789,
-		"email": "pg1234@gmail.com",
+		"mobile": "(314)-482-3499",
+		"email": "ppgupt1@gmail.com",
 		"twitter": "@pg123",
 		"github": "poonamgp14",
-		"location":"Saint Louis, MO"
+		"location":"Saint Louis, MO",
+		"resume": "https://github.com/poonamgp14/frontend-nanodegree-resume"
 	},
-	"welcomeMessage": "Welcome to purple-glare!!",
+	"welcomeMessage": "Welcome!!",
 	"biopic" : "images/fry.jpg",
-	"aboutme" : "I am a biotechnologist by degree. After having worked in data" +
-				" management at various life-science companies for 3 years, " +
-				"I have found my passion in programming and web developement. " +
-				"I often have wow moments learning and playing around different tools" +
-				" to create beautiful visual experiences over the web.",
-	"skills": ["HTML5","CSS3","JS","SQL","Perl","Python","life-Science","Clinical Trails"],
+	"aboutme" : "Hey there! Anybody can write code that a computer can understand. Good programmers write code that humans can understand. And, I write good deployable code and develop things! If not coding, you can find me getting better at CrossFit, learning Indian Classical dance or taking Improv Classes",
+	"skills": ["AWS","Java","Python","JS","SQL","NoSQL","API", "LeaderShip"],
 	display: function(){
 		var formattedName = HTMLheaderName.replace('%data%',bio.name);
 		var formattedRole = HTMLheaderRole.replace('%data%',bio.role);
@@ -40,9 +37,9 @@ var bio = {
 		var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
 		var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts.twitter);
 		var formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
+		var formattedCode = HTMLblog.replace("%data%",bio.contacts.resume);
 
-
-		var formattedConnect = formattedMobile + formattedEmail + formattedTwitter + formattedGithub;
+		var formattedConnect = formattedMobile + formattedEmail + formattedGithub + formattedCode;
 		$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedConnect);
@@ -82,17 +79,17 @@ var navMenu = {
 		"hrefValue" : "#header",
 		"contentValue" : "About Me"
 	},
-	{
-		"hrefValue" : "#workExperience",
-		"contentValue" : "Work Experience"
-	},
+	// {
+	// 	"hrefValue" : "#workExperience",
+	// 	"contentValue" : "Work Experience"
+	// },
 	{
 		"hrefValue" : "#projects",
 		"contentValue" : "Projects"
 	},
 	{
 		"hrefValue" : "#education",
-		"contentValue" : "Education"
+		"contentValue" : "Certification"
 	},
 	{
 		"hrefValue" : "#skills",
@@ -118,92 +115,40 @@ navMenu.display();
 
 
 // work object and its function
-var work = {
-	"jobs": [
- 	{
-		"title": "Business Intelligence Intern",
-		"employer" : "Binary Way LLC",
-		"dates" : "Jan 2013 - Jun 2013",
-		"description" : "This is description of Business Intelligence Internjob",
-		"location" : "Delhi,India"
-	},
-	{
- 		"title": "Clinical Data Co-ordinator",
-		"employer" : "Pharmascent",
-		"dates" : "Mar 2012 - Nov 2012",
-		"description" : "This is description of Clinical Data Co-ordinator job",
-		"location" : "Overland Park, KS"
-	},
-	{
-		"title": "Quality Assurance Associate",
-		"employer" : "Kelly Resources",
-		"dates" : "Jul 2011 - Mar 2012",
-		"description" : "This is description of Quality Assurance Associate job",
-		"location" : "Saint Louis, MO"
-	},
-	{
-		"title": "Scientific Reference Data Curator",
-		"employer" : "Envision",
-		"dates" : "Dec 2010 - May 2011",
-		"description" : "This is description of Scientific Reference Data Curator job",
-		"location" : "Saint Louis, MO"
-	},
-	{
-		"title": "Research Associate",
-		"employer" : "Georgetown University",
-		"dates" : "Jan 2010 - Dec 2010",
-		"description" : "This is description of Research Associate job",
-		"location" : "Washington, DC"
-	}
-	],
-	display: function(){
-		for (job in work.jobs){
-			$("#workExperience").append(HTMLworkStart);
-			var formattedworkEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
-			var formattedworkTitle = HTMLworkTitle.replace("%data%",work.jobs[job].title);
-			var formattedworkDates = HTMLworkDates.replace("%data%",work.jobs[job].dates);
-			var formattedworkLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
-			var formattedworkDescription = HTMLworkDescription.replace("%data%",work.jobs[job].description);
-			var formattedEmployerTitle = formattedworkEmployer + formattedworkTitle;
-
-			$(".work-entry:last").append(formattedEmployerTitle);
-			$(".work-entry:last").append(formattedworkDates);
-			$(".work-entry:last").append(formattedworkLocation);
-			$(".work-entry:last").append(formattedworkDescription);
-		}
-	}
-};
-
-work.display();
 
 
 // projects object
 var projects = {
 	"projects":[
 	{	"title" : "Frogger Game",
-		"dates" : 2015,
-		"description" : "This is description of frogger game",
-		"images": "images/projects.gif"
+		"CodeLink" : "https://poonamgp14.github.io/frontend-nanodegree-arcade-game/#",
+		"description" : "Vanilla JavaScript Object-Oriented Programming based Arcade Game",
 	},
-	{	"title" : "Neighborhood Map",
-		"dates" : 2015,
-		"description" : "This is description of neighborhood map",
-		"images": "images/projects.gif"
-
+	{	"title" : "SuperDuperDrive",
+		"CodeLink" : "https://github.com/poonamgp14/SuperDuperDrive",
+		"description" : "Spring Boot and Thymeleaf based Personal Cloud Storage",
+	},
+	{	"title" : "Critter",
+		"CodeLink" : "https://github.com/poonamgp14/critter/tree/main",
+		"description" : "Critter is a Software as a Service application that provides a scheduling interface for a small business that takes care of animals. This Spring Boot project will allow users to create pets, owners, and employees, and then schedule events for employees to provide services for pets.",
+	},
+	{	"title" : "In-Progress",
+		"CodeLink" : "#",
+		"description" : "Real-time Streaming SpringBoot/Kafka Application analyzing posts from Bluesky Social Media",
 	}
    ],
    display: function(){
 		for (project in projects.projects){
 			$("#projects").append(HTMLprojectStart);
-			var formattedprojectTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
-			var formattedprojectDates = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
+			var formattedprojectTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].CodeLink);
+			var formattedprojectCode = HTMLprojectCode.replace("%data%",projects.projects[project].title);
 			var formattedprojectDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
-			var formattedprojectImage = HTMLprojectImage.replace("%data%",projects.projects[project].images);
+			// var formattedprojectImage = HTMLprojectImage.replace("%data%",projects.projects[project].images);
 
-			$(".project-entry:last").append(formattedprojectTitle);
-			$(".project-entry:last").append(formattedprojectDates);
+			$(".project-entry:last").append(formattedprojectTitle + formattedprojectCode);
+			//$(".project-entry:last").append(formattedprojectCode);
 			$(".project-entry:last").append(formattedprojectDescription);
-			$(".project-entry:last").append(formattedprojectImage);
+			// $(".project-entry:last").append(formattedprojectImage);
 		}
 	}
 };
@@ -216,37 +161,31 @@ projects.display();
 var education = {
 	"schools":[
 	{
-		"name": "Georgetown University",
-		"location": "Washington, DC",
-		"degree": "Master of Science",
-		"majors": ["Biotechnology Business"],
-		"dates" : 2010,
-		"url" : "http://www.georgetown.edu/"
+		"degree": "AWS Certified Solition Architect",
+		"majors": ["Professional"],
+		"dates" : "May 2024 - May 2027"
 
 	},
 	{
-		"name": "Bangalore University",
-		"location": "Bangalore,India",
-		"degree": "Bachelor of Science",
-		"majors": ["Biotechnology"],
-		"dates" : 2007,
-		"ulr" : "http://bangaloreuniversity.ac.in/"
+		"degree": "Google Cloud Certified Developer",
+		"majors": ["Associate"],
+		"dates" : "Dec 2022",
 	}
 	],
-	"onlineCourses": [
-	{
-		"title": "Front-End Web Developer Nanodegree",
-		"school": "Udacity",
-		"dates": 2015,
-		"url": "www.udacity.com"
-	},
-	{
-		"title": " Introduction to Programming Nanodegree",
-		"school": "Udacity",
-		"dates": 2015,
-		"url": "www.udacity.com"
-	}
-	],
+	// "onlineCourses": [
+	// {
+	// 	"title": "AWS Certified Solition Architect",
+	// 	"school": "Professional",
+	// 	"dates": "May 2024 - May 2027",
+	// 	"url": "https://cp.certmetrics.com/amazon/en/public/verify/credential/cdeea86003c6443a8da437c4c6b4b437"
+	// },
+	// {
+	// 	"title": " Introduction to Programming Nanodegree",
+	// 	"school": "Udacity",
+	// 	"dates": 2015,
+	// 	"url": "www.udacity.com"
+	// }
+	// ],
 	display: function(){
 		for (school in education.schools){
 			$("#education").append(HTMLschoolStart);
@@ -261,29 +200,27 @@ var education = {
 
 			$(".education-entry:last").append(formattedDegreeAndMajor);
 			$(".education-entry:last").append(formattedschoolDates);
-			$(".education-entry:last").append(formattedschoolName);
-			$(".education-entry:last").append(formattedschoolLocation);
+			// $(".education-entry:last").append(formattedschoolName);
+			// $(".education-entry:last").append(formattedschoolLocation);
 		}
-		$("#education").append(HTMLonlineClasses);
+		//$("#education").append(HTMLonlineClasses);
 
-		for (onlineCourse in education.onlineCourses){
-			$("#education").append(HTMLschoolStart);
-			var formattedonlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[onlineCourse].title);
-			var formattedonlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[onlineCourse].school);
-			var formattedonlineDates = HTMLonlineDates.replace("%data%",education.onlineCourses[onlineCourse].dates);
-			var formattedHTMLonlineURL = HTMLonlineURL.replace("%data%",education.onlineCourses[onlineCourse].url);
-			var formattedOnlineSchoolAndTitle = formattedonlineTitle + formattedonlineSchool;
+		// for (onlineCourse in education.onlineCourses){
+		// 	$("#education").append(HTMLschoolStart);
+		// 	var formattedonlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[onlineCourse].title);
+		// 	var formattedonlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[onlineCourse].school);
+		// 	var formattedonlineDates = HTMLonlineDates.replace("%data%",education.onlineCourses[onlineCourse].dates);
+		// 	var formattedHTMLonlineURL = HTMLonlineURL.replace("%data%",education.onlineCourses[onlineCourse].url);
+		// 	var formattedOnlineSchoolAndTitle = formattedonlineTitle + formattedonlineSchool;
 
-			$(".education-entry:last").append(formattedOnlineSchoolAndTitle);
-			$(".education-entry:last").append(formattedonlineDates);
-			$(".education-entry:last").append(formattedHTMLonlineURL);
-		}
+		// 	$(".education-entry:last").append(formattedOnlineSchoolAndTitle);
+		// 	$(".education-entry:last").append(formattedonlineDates);
+		// 	$(".education-entry:last").append(formattedHTMLonlineURL);
+		// }
 	}
 };
 education.display();
 
-//Google Map API - Where I lived and Worked!!
-$("#mapDiv").append(googleMap);
 
 
 
