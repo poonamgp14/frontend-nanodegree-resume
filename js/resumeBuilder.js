@@ -172,20 +172,6 @@ var education = {
 		"dates" : "Dec 2022",
 	}
 	],
-	// "onlineCourses": [
-	// {
-	// 	"title": "AWS Certified Solition Architect",
-	// 	"school": "Professional",
-	// 	"dates": "May 2024 - May 2027",
-	// 	"url": "https://cp.certmetrics.com/amazon/en/public/verify/credential/cdeea86003c6443a8da437c4c6b4b437"
-	// },
-	// {
-	// 	"title": " Introduction to Programming Nanodegree",
-	// 	"school": "Udacity",
-	// 	"dates": 2015,
-	// 	"url": "www.udacity.com"
-	// }
-	// ],
 	display: function(){
 		for (school in education.schools){
 			$("#education").append(HTMLschoolStart);
@@ -203,20 +189,6 @@ var education = {
 			// $(".education-entry:last").append(formattedschoolName);
 			// $(".education-entry:last").append(formattedschoolLocation);
 		}
-		//$("#education").append(HTMLonlineClasses);
-
-		// for (onlineCourse in education.onlineCourses){
-		// 	$("#education").append(HTMLschoolStart);
-		// 	var formattedonlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[onlineCourse].title);
-		// 	var formattedonlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[onlineCourse].school);
-		// 	var formattedonlineDates = HTMLonlineDates.replace("%data%",education.onlineCourses[onlineCourse].dates);
-		// 	var formattedHTMLonlineURL = HTMLonlineURL.replace("%data%",education.onlineCourses[onlineCourse].url);
-		// 	var formattedOnlineSchoolAndTitle = formattedonlineTitle + formattedonlineSchool;
-
-		// 	$(".education-entry:last").append(formattedOnlineSchoolAndTitle);
-		// 	$(".education-entry:last").append(formattedonlineDates);
-		// 	$(".education-entry:last").append(formattedHTMLonlineURL);
-		// }
 	}
 };
 education.display();
