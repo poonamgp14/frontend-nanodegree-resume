@@ -10,7 +10,7 @@ var bio = {
 		"location":"Saint Louis, MO",
 		"resume": "https://github.com/poonamgp14/frontend-nanodegree-resume"
 	},
-	"welcomeMessage": "Welcome!!",
+	"welcomeMessage": "Welcome to Junk-Head!!",
 	"biopic" : "images/fry.jpg",
 	"aboutme" : "Hey there! Anybody can write code that a computer can understand. Good programmers write code that humans can understand. And, I write good deployable code and develop things! If not coding, you can find me getting better at CrossFit, learning Indian Classical dance or taking Improv Classes",
 	"skills": ["AWS","Java","Python","JS","SQL","NoSQL","API", "LeaderShip"],
