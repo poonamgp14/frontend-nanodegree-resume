@@ -120,6 +120,15 @@ navMenu.display();
 // projects object
 var projects = {
 	"projects":[
+	{	"title" : "Fitness App - In progress",
+		"CodeLink" : "https://github.com/poonamgp14/Java-AI-Fitness",
+		"description" : "AI Powered Java Microservices/SpringBoot/RabbitMQ Fitness App for suggesting workouts recommendations",
+	},
+	{
+		"title" : "NASA-RAG-Chatbot - In progress",
+		"CodeLink" : "https://github.com/poonamgp14/NASA-RAG-Chatbot",
+		"description" : "RAG based chatbot for NASA scientist for Apollo 11, Apollo 13, Challenger missions",
+	},
 	{	"title" : "Frogger Game",
 		"CodeLink" : "https://poonamgp14.github.io/frontend-nanodegree-arcade-game/#",
 		"description" : "Vanilla JavaScript Object-Oriented Programming based Arcade Game",
@@ -131,11 +140,8 @@ var projects = {
 	{	"title" : "Critter",
 		"CodeLink" : "https://github.com/poonamgp14/critter/tree/main",
 		"description" : "Critter is a Software as a Service application that provides a scheduling interface for a small business that takes care of animals. This Spring Boot project will allow users to create pets, owners, and employees, and then schedule events for employees to provide services for pets.",
-	},
-	{	"title" : "In-Progress",
-		"CodeLink" : "#",
-		"description" : "Real-time Streaming SpringBoot/Kafka Application analyzing posts from Bluesky Social Media",
 	}
+	
    ],
    display: function(){
 		for (project in projects.projects){
