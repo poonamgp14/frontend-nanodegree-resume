@@ -12,7 +12,7 @@ var bio = {
 	},
 	"welcomeMessage": "Welcome to Junk-Head!!",
 	"biopic" : "images/fry.jpg",
-	"aboutme" : "Hey there! Anybody can write code that a computer can understand. Good programmers write code that humans can understand. And, I write production level deployable code and develop things since 8+ years! If not coding, you can find me getting better at CrossFit, learning Indian Classical dance or taking Improv Classes",
+	"aboutme" : "Hey there! Anybody can write code that a computer can understand. Good programmers write code that humans can understand. And, I write production level deployable code and develop things since 9+ years! If not coding, you can find me getting better at CrossFit, learning Indian Classical dance or taking Improv Classes",
 	"skills": ["AWS","Java","Python","JS","SQL","NoSQL","API", "LeaderShip"],
 	display: function(){
 		var formattedName = HTMLheaderName.replace('%data%',bio.name);
