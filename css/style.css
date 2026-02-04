@@ -9,7 +9,7 @@ h4,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Amiri", serif;
+  /* font-family: "Amiri", serif; */
 }
 
 p {
@@ -22,7 +22,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Bangers", cursive;
+  /* font-family: "Bangers", cursive; */
   color: #ba55d3;
 }
 
