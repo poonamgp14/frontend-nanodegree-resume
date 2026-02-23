@@ -120,7 +120,7 @@ navMenu.display();
 // projects object
 var projects = {
 	"projects":[
-	{	"title" : "Fitness App - In progress",
+	{	"title" : "Fitness App",
 		"CodeLink" : "https://github.com/poonamgp14/Java-AI-Fitness",
 		"description" : "AI Powered Java Microservices/SpringBoot/RabbitMQ Fitness App for suggesting workouts recommendations",
 	},
@@ -130,7 +130,7 @@ var projects = {
 		"description" : "RAG based chatbot for NASA scientist for Apollo 11, Apollo 13, Challenger missions",
 	},
 	{	"title" : "Multi-threaded Webcrawler",
-		"CodeLink" : "https://github.com/poonamgp14/Multi-threaded-Java-Webcrawlere",
+		"CodeLink" : "https://github.com/poonamgp14/Multi-threaded-Java-Webcrawler",
 		"description" : "Multi-threaded web crawler built by core Java capabilities",
 	},
 	{	"title" : "Frogger Game",
